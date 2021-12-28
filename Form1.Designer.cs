@@ -1,5 +1,5 @@
 ﻿
-namespace учебная_практика
+namespace Таблица
 {
     partial class Form1
     {
@@ -30,275 +30,297 @@ namespace учебная_практика
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.label6 = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label7 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.tabPage2.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPage1.SuspendLayout();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // tabPage2
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Pink;
-            this.label1.Location = new System.Drawing.Point(282, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(192, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Система строительной организации";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.tabPage2.BackColor = System.Drawing.Color.SeaShell;
+            this.tabPage2.Controls.Add(this.tableLayoutPanel1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(792, 424);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "SELECT";
             // 
-            // comboBox1
+            // tableLayoutPanel1
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.Pink;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Строительное направление1",
-            "Строительное направление2"});
-            this.comboBox1.Location = new System.Drawing.Point(25, 123);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 1;
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.button2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(786, 418);
+            this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // comboBox2
+            // button2
             // 
-            this.comboBox2.BackColor = System.Drawing.Color.Pink;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Участок1",
-            "Участок2"});
-            this.comboBox2.Location = new System.Drawing.Point(152, 123);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 2;
+            this.button2.Location = new System.Drawing.Point(3, 379);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(119, 36);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "SELECT";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // comboBox3
+            // dataGridView1
             // 
-            this.comboBox3.BackColor = System.Drawing.Color.Pink;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "Начальник 1",
-            "Начальник 2",
-            "Начальник 3",
-            "Начальник 4"});
-            this.comboBox3.Location = new System.Drawing.Point(279, 123);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 3;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(780, 370);
+            this.dataGridView1.TabIndex = 1;
             // 
-            // comboBox4
+            // tabPage1
             // 
-            this.comboBox4.BackColor = System.Drawing.Color.Pink;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "Бригадир1",
-            "Бригадир2",
-            "Бригадир3",
-            "Бригадир4",
-            "Бригадир5",
-            "Бригадир6",
-            "Бригадир7"});
-            this.comboBox4.Location = new System.Drawing.Point(406, 123);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 21);
-            this.comboBox4.TabIndex = 4;
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.BackColor = System.Drawing.Color.Pink;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
-            "Бригада1",
-            "Бригада2",
-            "Бригада3",
-            "Бригада4",
-            "Бригада5",
-            "Бригада6",
-            "Бригада7"});
-            this.comboBox6.Location = new System.Drawing.Point(533, 123);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(121, 21);
-            this.comboBox6.TabIndex = 6;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Pink;
-            this.button1.Location = new System.Drawing.Point(602, 328);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(186, 55);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Добавить в базу данных";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(12, 107);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 13);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Строительное управление";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(158, 107);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 13);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Участок";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(276, 107);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(104, 13);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Начальник участка";
+            this.tabPage1.BackColor = System.Drawing.Color.DarkSalmon;
+            this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
+            this.tabPage1.Controls.Add(this.comboBox5);
+            this.tabPage1.Controls.Add(this.comboBox4);
+            this.tabPage1.Controls.Add(this.comboBox3);
+            this.tabPage1.Controls.Add(this.comboBox2);
+            this.tabPage1.Controls.Add(this.comboBox1);
+            this.tabPage1.Controls.Add(this.label6);
+            this.tabPage1.Controls.Add(this.label5);
+            this.tabPage1.Controls.Add(this.label4);
+            this.tabPage1.Controls.Add(this.label3);
+            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(792, 424);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "INSERT";
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(403, 107);
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(356, 22);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 13);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Бригадир";
+            this.label5.Size = new System.Drawing.Size(96, 13);
+            this.label5.TabIndex = 35;
+            this.label5.Text = "Внесение данных";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(533, 89);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(106, 13);
+            this.label4.TabIndex = 34;
+            this.label4.Text = "Дизайнер-технолог\r\n";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(406, 89);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(57, 13);
+            this.label3.TabIndex = 33;
+            this.label3.Text = "Продавец\r\n";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(293, 89);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.TabIndex = 32;
+            this.label2.Text = "Водитель";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(166, 89);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "Бухгалтерия";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(22, 332);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(150, 73);
+            this.button1.TabIndex = 30;
+            this.button1.Text = "Внести данные\r\n";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(800, 450);
+            this.tabControl1.TabIndex = 0;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(530, 107);
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.label6.Location = new System.Drawing.Point(47, 89);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 13);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Бригада";
+            this.label6.Size = new System.Drawing.Size(51, 13);
+            this.label6.TabIndex = 37;
+            this.label6.Text = "Мастера";
             // 
-            // dateTimePicker1
+            // comboBox1
             // 
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.Pink;
-            this.dateTimePicker1.Location = new System.Drawing.Point(25, 186);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(127, 20);
-            this.dateTimePicker1.TabIndex = 13;
+            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "ФИО",
+            "Телефон",
+            "Дата рождения"});
+            this.comboBox1.Location = new System.Drawing.Point(16, 118);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 38;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // label7
+            // comboBox2
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Location = new System.Drawing.Point(22, 170);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 13);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Начало работ";
+            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "ФИО",
+            "Телефон",
+            "Дата рождения"});
+            this.comboBox2.Location = new System.Drawing.Point(143, 118);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 39;
             // 
-            // dateTimePicker2
+            // comboBox3
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(161, 186);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(112, 20);
-            this.dateTimePicker2.TabIndex = 15;
+            this.comboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "ФИО",
+            "Телефон",
+            "Дата рождения"});
+            this.comboBox3.Location = new System.Drawing.Point(268, 118);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(121, 21);
+            this.comboBox3.TabIndex = 40;
             // 
-            // label8
+            // comboBox4
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Location = new System.Drawing.Point(158, 170);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(70, 13);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "Конец работ";
+            this.comboBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "ФИО",
+            "Телефон",
+            "Дата рождения"});
+            this.comboBox4.Location = new System.Drawing.Point(522, 118);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(121, 21);
+            this.comboBox4.TabIndex = 41;
             // 
-            // textBox1
+            // comboBox5
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Pink;
-            this.textBox1.Location = new System.Drawing.Point(25, 303);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(147, 80);
-            this.textBox1.TabIndex = 17;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Location = new System.Drawing.Point(22, 287);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(107, 13);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "Расход материалов";
+            this.comboBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            "ФИО",
+            "Дата рождения",
+            "Телефон"});
+            this.comboBox5.Location = new System.Drawing.Point(395, 118);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(121, 21);
+            this.comboBox5.TabIndex = 42;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox6);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
-            this.Text = "Система строительной организации";
+            this.Text = "Мебельный цех";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.tabPage2.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label9;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
 
